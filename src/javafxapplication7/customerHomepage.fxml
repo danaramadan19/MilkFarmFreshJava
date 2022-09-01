@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.CustomerHomepageController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #FDE6EC; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="250.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="200.0" text="  Welcome to Our Farm! " textAlignment="CENTER" textFill="#171717" wrapText="true">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Separator prefHeight="0.0" prefWidth="202.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="202.0" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@home.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="15.0" right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="162.0" style="-fx-background-color: #FDE6EC; -fx-background-radius: 90;" stylesheets="@style.css" text="Home">
+                           <font>
+                              <Font name="Cambria" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="mouse-moved" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="202.0" styleClass="mouse-moved" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@dairy-products.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="prodect" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="162.0" style="-fx-background-color: #FDE6EC; -fx-background-radius: 90;" styleClass="mouse-moved" stylesheets="@style.css" text="Prodects">
+                           <font>
+                              <Font name="Cambria" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="202.0" styleClass="mouse-moved" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@shopping-cart.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="cart" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="162.0" style="-fx-background-color: #FDE6EC; -fx-background-radius: 90;" styleClass="mouse-moved" stylesheets="@style.css" text="Cart">
+                           <font>
+                              <Font name="Cambria" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="215.0" styleClass="mouse-moved" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@help.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="15.0" right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="help" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="38.0" prefWidth="158.0" style="-fx-background-color: #FDE6EC; -fx-background-radius: 90;" styleClass="mouse-moved" stylesheets="@style.css" text="Help">
+                           <font>
+                              <Font name="Cambria" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator prefHeight="0.0" prefWidth="202.0" />
+            <Pane prefHeight="113.0" prefWidth="215.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="2.0" layoutY="2.0" prefHeight="109.0" prefWidth="212.0">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@log-out.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="logout" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="139.0" styleClass="logbtn2" stylesheets="@style.css" text="Log Out">
+                           <font>
+                              <Font name="Cambria Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <ImageView fitHeight="221.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pinlcow2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="565.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="543.0" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@loupe%20(1).png" />
+                           </image>
+                        </ImageView>
+                        <TextField prefHeight="30.0" prefWidth="449.0" promptText="Type here to search" styleClass="transparent" stylesheets="@style.css">
+                           <font>
+                              <Font name="Bookman Old Style" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label prefHeight="17.0" prefWidth="109.0" text="Your Account" underline="true">
+                           <font>
+                              <Font name="Cambria" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children></HBox>
+            <Label prefHeight="25.0" prefWidth="184.0" text="Recently Added">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="20.0" />
+               </VBox.margin>
+            </Label>
+            <ScrollPane prefHeight="122.0" prefWidth="545.0" stylesheets="@style.css">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+               <content>
+                  <HBox fx:id="cardLayout" prefHeight="95.0" prefWidth="758.0" styleClass="transparent" stylesheets="@style.css">
+                     <children>
+                        <HBox fx:id="box" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="95.0" prefWidth="247.0" style="-fx-background-color: #B9E5ff;" stylesheets="@style.css">
+                           <children>
+                              <ImageView fx:id="foodimg" fitHeight="67.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sausage.jpg" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="95.0" prefWidth="122.0">
+                                 <children>
+                                    <Label fx:id="namepro" prefHeight="42.0" prefWidth="84.0" text="FRESH SMOKED&#10; SAUSAGE" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Bernard MT Condensed" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="description" prefHeight="42.0" prefWidth="120.0" text="Smoked with apple&#10; wood low and slow" textAlignment="CENTER" textFill="#eb2933">
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="fruit-item" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox fx:id="box1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="95.0" prefWidth="247.0" style="-fx-background-color: #ffffe0;" stylesheets="@style.css">
+                           <children>
+                              <ImageView fx:id="foodimg1" fitHeight="73.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@marblechedder.jpg" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="95.0" prefWidth="122.0">
+                                 <children>
+                                    <Label fx:id="namepro1" prefHeight="42.0" prefWidth="106.0" text="MARBLE CHEDDAR&#10;" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Bernard MT Condensed" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="description1" prefHeight="54.0" prefWidth="129.0" text="  Heavenly Beautiful &#10;  yellow and white&#10;     chedder" textAlignment="CENTER" textFill="#eb2933">
+                                       <font>
+                                          <Font name="Bell MT" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="fruit-item" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox fx:id="box11" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="95.0" prefWidth="247.0" style="-fx-background-color: #CBC3E3;" stylesheets="@style.css">
+                           <children>
+                              <ImageView fx:id="foodimg11" fitHeight="76.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@smoothie.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="95.0" prefWidth="122.0">
+                                 <children>
+                                    <Label fx:id="namepro11" prefHeight="42.0" prefWidth="106.0" text="FRUIT SMOOTHIE&#10;" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Bernard MT Condensed" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="description11" prefHeight="65.0" prefWidth="122.0" text="Our first fresh  fruit &#10;and milk smoothie!" textAlignment="CENTER" textFill="#eb2933" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="fruit-item" />
+                           </styleClass>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </content>
+               <styleClass>
+                  <String fx:value="transparent" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </ScrollPane>
+            <HBox prefHeight="174.0" prefWidth="565.0" style="-fx-background-radius: 30;">
+               <children>
+                  <VBox fx:id="deal" alignment="CENTER" prefHeight="145.0" prefWidth="271.0" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="67.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="@hot-deals.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="namepro2" prefHeight="43.0" prefWidth="149.0" text="Today's Best Deals&#10;" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bernard MT Condensed" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button fx:id="deelss" mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="117.0" styleClass="logbtn2" stylesheets="@style.css" text="Show Deals">
+                           <font>
+                              <Font name="Cambria" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="white-card" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="146.0" prefWidth="144.0" stylesheets="@style.css">
+                     <HBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="pink-card" />
+                     </styleClass>
+                     <children>
+                        <Label fx:id="namepro3" prefHeight="104.0" prefWidth="116.0" text="Free Delivary &#10;TODAY!" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bernard MT Condensed" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="151.0" prefWidth="123.0" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="pink-card" />
+                     </styleClass>
+                     <children>
+                        <Button fx:id="adv" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: FDE6EC;" styleClass="logbtn2" stylesheets="@style.css" text="    Today's   &#10;    Advice">
+                           <font>
+                              <Font name="Book Antiqua" size="18.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="66.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@lightbulb.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <Separator prefHeight="0.0" prefWidth="202.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Separator>
+            <Label prefHeight="25.0" prefWidth="184.0" text="Coming Soon..">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="179.0" prefWidth="565.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="161.0" prefWidth="144.0" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="white-card" />
+                     </styleClass>
+                     <children>
+                        <Label fx:id="namepro31" prefHeight="52.0" prefWidth="116.0" text="  Beef Bacon&#10;" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bernard MT Condensed" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="92.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bacon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="20.0" top="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="161.0" prefWidth="144.0" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="white-card" />
+                     </styleClass>
+                     <children>
+                        <Label fx:id="namepro311" prefHeight="52.0" prefWidth="116.0" text="  Home made&#10;     bread&#10;" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bernard MT Condensed" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="92.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@bakery.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="20.0" top="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="161.0" prefWidth="144.0" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="white-card" />
+                     </styleClass>
+                     <children>
+                        <Label fx:id="namepro3111" prefHeight="52.0" prefWidth="115.0" text="     Breakfast&#10;     Package&#10;" textAlignment="CENTER">
+                           <font>
+                              <Font name="Bernard MT Condensed" size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="92.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@online-shopping.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="15.0" top="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

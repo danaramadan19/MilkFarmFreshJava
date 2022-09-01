@@ -1,0 +1,145 @@
+.search-box{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.search-button{
+    -fx-background-color: #828282;
+    -fx-background-radius: 30;
+}
+
+.selected{
+    -fx-background-color: #F3F3F3;
+}
+
+.mouse-moved:hover{
+    -fx-background-color: #E4E4E4;
+    
+}
+
+
+.right-bar{
+    -fx-background-color: #D3D3D3;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.chosen-fruit-card{
+    -fx-background-color: #99D3ED;
+    -fx-background-radius: 30;
+}
+
+.comboBox{
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-background-radius: 30;
+}
+
+.add-btn{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100;
+}
+
+.free-delivery-card{
+    -fx-background-color: #D3D3D3;
+    -fx-background-radius: 30;
+}
+
+.shopping-online-card{
+    -fx-background-color: #BAEAC3;
+    -fx-background-radius: 30;
+}
+
+.fruit-item{
+    -fx-background-color: #FFFFFF;
+        -fx-background-radius: 30;
+}
+
+.forgetBtn{
+    -fx-text-fill: #878787;
+    
+}
+.forgetBtn:hover{
+    -fx-text-fill: #B9E986;
+    -fx-underline: true;
+}
+
+.logbtn {
+    -fx-background-color: #B9E986;
+    -fx-text-fill: #f5f3f3;
+}
+
+.logbtn:hover {
+     -fx-background-color:transparent;
+     -fx-background-radius: 30;
+       -fx-text-fill:#B9E986;
+       -fx-border-color: #B9E986;
+      
+       -fx-border-style: solid;
+         -fx-border-radius: 30; 
+            
+}
+
+.parent{
+    -fx-background-color: transparent;
+}
+.pane{
+   -fx-background-color: #FDE6EC; 
+}
+
+.white-pane{
+    -fx-background-color: #ffffff;
+}
+
+.tf_box{
+    -fx-background-color: transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+.tf{
+    -fx-background-color: transparent;    
+}
+.blue-btn{
+    -fx-background-color: #e187a1;
+    -fx-background-radius: 5px;
+    -fx-text-fill: #000000;
+}
+
+.logbtn2 {
+    -fx-background-color: #e187a1;
+    -fx-text-fill: #000000;
+    -fx-background-radius: 30;
+}
+
+.logbtn2:hover {
+     -fx-background-color:transparent;
+     -fx-background-radius: 30;
+       -fx-text-fill:#e187a1;
+       -fx-border-color: #e187a1;
+     -fx-border-radius: 30;
+     -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);        
+}
+
+.forgetBtn2{
+    -fx-text-fill: #878787;
+    
+}
+.forgetBtn2:hover{
+    -fx-text-fill: #e187a1;
+    -fx-underline: true;
+}
+
+.white-card{
+     -fx-background-color:#ffffff;
+     -fx-background-radius: 20;
+}
+
+.pink-card{
+     -fx-background-color:#FDE6EC;
+     -fx-background-radius: 20;
+}

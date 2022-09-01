@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.ProdectTableController">
+   <children>
+      <TableView fx:id="productTable" layoutX="355.0" layoutY="166.0" prefHeight="327.0" prefWidth="575.0" stylesheets="@style.css">
+         <columns>
+            <TableColumn fx:id="idCol" maxWidth="108.66665649414062" prefWidth="108.66665649414062" style="-fx-alignment: center;" text="Product ID" />
+            <TableColumn fx:id="nameCol" maxWidth="154.0" prefWidth="135.33331298828125" style="-fx-alignment: center;" text="Product Name" />
+            <TableColumn fx:id="priceCol" maxWidth="142.66668701171875" prefWidth="103.66668701171875" style="-fx-alignment: center;" text="Price" />
+            <TableColumn fx:id="catCol" maxWidth="154.0" prefWidth="109.0" style="-fx-alignment: center;" text="Category" />
+            <TableColumn fx:id="boughtCol" maxWidth="175.0" prefWidth="115.0" style="-fx-alignment: center;" text="How many Bought" />
+         </columns>
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </TableView>
+      <Label layoutX="497.0" layoutY="28.0" prefHeight="75.0" prefWidth="292.0" text="Product Details">
+         <font>
+            <Font name="Cambria" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="447.0" layoutY="106.0" text="Cheese is milk's leap toward immortality.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="604.0" prefWidth="305.0" style="-fx-background-color: #B0DE80;" stylesheets="@style.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="77.0" prefWidth="285.0" stylesheets="@style.css">
+               <children>
+                  <TextField fx:id="idtext" layoutX="102.0" layoutY="27.0" prefHeight="50.0" prefWidth="250.0" promptText="Product ID" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="search-box" />
+                  <String fx:value="transparent" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="285.0" stylesheets="@style.css">
+               <children>
+                  <TextField fx:id="nametext" prefHeight="50.0" prefWidth="250.0" promptText="Product name" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="search-box" />
+                  <String fx:value="transparent" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="66.0" prefWidth="285.0" stylesheets="@style.css">
+               <children>
+                  <TextField fx:id="pricetext" prefHeight="50.0" prefWidth="250.0" promptText="Price" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="search-box" />
+                  <String fx:value="transparent" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="20.0" layoutY="392.0" prefHeight="72.0" prefWidth="305.0" stylesheets="@style.css">
+               <styleClass>
+                  <String fx:value="search-box" />
+                  <String fx:value="transparent" />
+               </styleClass>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="66.0" prefWidth="285.0" stylesheets="@style.css">
+                     <children>
+                        <TextField fx:id="categorytext" prefHeight="50.0" prefWidth="250.0" promptText="Category" stylesheets="@style.css">
+                           <styleClass>
+                              <String fx:value="search-box" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <tooltip>
+                              <Tooltip text="Please be sure that you only have 4 categories&#10;which is milk , meat , Cheese or Drinks&#10;" />
+                           </tooltip>
+                        </TextField>
+                     </children>
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="transparent" />
+                     </styleClass>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="220.0" prefHeight="68.0" prefWidth="285.0" stylesheets="@style.css">
+               <children>
+                  <TextField fx:id="boughttext" prefHeight="50.0" prefWidth="250.0" promptText="How many product bought" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="search-box" />
+                  <String fx:value="transparent" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="305.0">
+               <children>
+                  <Button fx:id="logout" mnemonicParsing="false" onAction="#handlerButtonAction" prefHeight="33.0" prefWidth="107.0" style="-fx-background-color: white;" stylesheets="@style.css" text="Log out">
+                     <font>
+                        <Font name="Cambria Bold" size="16.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="search-button" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="clean" mnemonicParsing="false" onMouseClicked="#clean" prefHeight="33.0" prefWidth="107.0" style="-fx-background-color: white;" stylesheets="@style.css" text="Clear">
+                     <font>
+                        <Font name="Cambria Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="search-button" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="chosen-fruit-card" />
+            <String fx:value="shadow" />
+         </styleClass>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <ImageView fitHeight="107.0" fitWidth="128.0" layoutX="829.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@agriculture.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="save" layoutX="369.0" layoutY="533.0" mnemonicParsing="false" onAction="#handlerButtonAction" prefHeight="52.0" prefWidth="121.0" stylesheets="@style.css" text="Save">
+         <font>
+            <Font name="Cambria" size="25.0" />
+         </font>
+         <styleClass>
+            <String fx:value="search-button" />
+            <String fx:value="logbtn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <Button fx:id="update" layoutX="585.0" layoutY="532.0" mnemonicParsing="false" onAction="#handlerButtonAction" prefHeight="52.0" prefWidth="121.0" stylesheets="@style.css" text="Update">
+         <font>
+            <Font name="Cambria" size="25.0" />
+         </font>
+         <styleClass>
+            <String fx:value="search-button" />
+            <String fx:value="logbtn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+      <Button layoutX="792.0" layoutY="535.0" mnemonicParsing="false" onMouseClicked="#Delete" prefHeight="52.0" prefWidth="121.0" stylesheets="@style.css" text="Delete">
+         <font>
+            <Font name="Cambria" size="25.0" />
+         </font>
+         <styleClass>
+            <String fx:value="search-button" />
+            <String fx:value="logbtn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>

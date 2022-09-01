@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.HelpController">
+   <children>
+      <BorderPane layoutX="175.0" layoutY="189.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Label prefHeight="412.0" prefWidth="492.0" text="&#10;&#10;Hi!&#10;How was your day! hope every thing is fine.&#10;You maybe  wondering what  we are doing!&#10;Here in  our    Fresh  Farm  we  provide  our&#10;products of milk, cheese and meat and help&#10;to deliver them to  customers as  quickly as &#10;possible Due to  the  Covid pandemic, many&#10;of these products  have been  damaged  due &#10;to the inability to  market and sell them in a&#10;timely  manner. So  here  we  are looking  to  &#10;solve this problem.&#10;&#10;Now if you wanna to check our prodects just &#10;click on Prodects button and enjoy our offers!" textAlignment="JUSTIFY" wrapText="true" BorderPane.alignment="CENTER_RIGHT">
+               <BorderPane.margin>
+                  <Insets left="25.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets right="25.0" />
+               </padding>
+               <font>
+                  <Font name="Cambria" size="20.0" />
+               </font>
+            </Label>
+         </center>
+         <bottom>
+            <HBox alignment="TOP_CENTER" prefHeight="179.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="slide" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="148.0" styleClass="logbtn2" stylesheets="@style.css" text="Go to slides">
+                     <font>
+                        <Font name="Cambria Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="230.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #FDE6EC; -fx-background-radius: 30;" styleClass="shadow" stylesheets="@style.css">
+         <children>
+            <VBox prefHeight="250.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="58.0" prefWidth="200.0" text="  Welcome to Our Farm! " textAlignment="CENTER" textFill="#171717" wrapText="true">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Separator prefHeight="0.0" prefWidth="202.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="202.0" styleClass="mouse-moved" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@home.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="15.0" right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="home" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="162.0" style="-fx-background-color: #FDE6EC; -fx-background-radius: 90;" stylesheets="@style.css" text="Home">
+                           <font>
+                              <Font name="Cambria" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="202.0" styleClass="mouse-moved" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@dairy-products.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="prodect" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="162.0" style="-fx-background-color: #FDE6EC; -fx-background-radius: 90;" styleClass="mouse-moved" stylesheets="@style.css" text="Prodects">
+                           <font>
+                              <Font name="Cambria" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="202.0" styleClass="mouse-moved" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@shopping-cart.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="cart" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="30.0" prefWidth="162.0" style="-fx-background-color: #FDE6EC; -fx-background-radius: 90;" styleClass="mouse-moved" stylesheets="@style.css" text="Cart">
+                           <font>
+                              <Font name="Cambria" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="55.0" prefWidth="215.0" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@help.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="15.0" right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="158.0" style="-fx-background-color: #FDE6EC; -fx-background-radius: 90;" styleClass="mouse-moved" stylesheets="@style.css" text="Help">
+                           <font>
+                              <Font name="Cambria" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="mouse-moved" />
+                        <String fx:value="selected" />
+                     </styleClass>
+                  </HBox>
+               </children>
+            </VBox>
+            <Separator prefHeight="0.0" prefWidth="202.0" />
+            <Pane prefHeight="113.0" prefWidth="215.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="2.0" layoutY="2.0" prefHeight="109.0" prefWidth="212.0">
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@log-out.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="logout" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="139.0" styleClass="logbtn2" stylesheets="@style.css" text="Log Out">
+                           <font>
+                              <Font name="Cambria Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <ImageView fitHeight="221.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pinlcow2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.OwnerHomepageController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="261.0">
+         <children>
+            <ImageView fitHeight="601.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@greencow.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="338.0" prefHeight="147.0" prefWidth="483.0">
+         <children>
+            <Label prefHeight="69.0" prefWidth="228.0" text="Owner Home Screen" textFill="#5e5252">
+               <font>
+                  <Font name="Berlin Sans FB" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="335.0" layoutY="149.0" prefHeight="287.0" prefWidth="489.0">
+         <children>
+            <VBox prefHeight="287.0" prefWidth="257.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="116.0" prefWidth="215.0" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="76.0" prefWidth="173.0" styleClass="add-btn" stylesheets="@style.css" text="View Customers" textFill="#50900b">
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="122.0" prefWidth="245.0" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="product" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="90.0" prefWidth="179.0" styleClass="add-btn" stylesheets="@style.css" text="Add Sell Products" textFill="#50900b">
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="287.0" prefWidth="257.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="116.0" prefWidth="215.0" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="sells" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="81.0" prefWidth="183.0" styleClass="add-btn" stylesheets="@style.css" text="View Sells" textFill="#50900b">
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="122.0" prefWidth="245.0" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="add" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="83.0" prefWidth="174.0" styleClass="add-btn" stylesheets="@style.css" text="Add Employee" textFill="#50900b">
+                           <font>
+                              <Font name="Cambria" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="439.0" layoutY="476.0" prefHeight="60.0" prefWidth="284.0" style="-fx-background-radius: 90;" stylesheets="@style.css">
+         <children>
+            <Button fx:id="jasper" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="60.0" prefWidth="221.0" styleClass="logbtn" stylesheets="@style.css" text="Products Report">
+               <font>
+                  <Font name="Cambria Bold" size="21.0" />
+               </font>
+            </Button>
+         </children>
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="logbtn" />
+         </styleClass>
+      </HBox>
+   </children>
+</AnchorPane>

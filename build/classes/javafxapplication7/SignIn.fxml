@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label prefHeight="24.0" prefWidth="62.0" text="Login" textFill="#e187a1">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="483.0" stylesheets="@style.css">
+         <children>
+            <TextField prefHeight="36.0" prefWidth="479.0" promptText="Email" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Cambria Bold" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="search-box" />
+                  <String fx:value="tf_box" />
+               </styleClass>
+            </TextField>
+            <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <Label fx:id="wrongemail" prefHeight="17.0" prefWidth="423.0" textAlignment="CENTER" textFill="#e11212">
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="485.0" stylesheets="@style.css">
+         <children>
+            <PasswordField prefHeight="36.0" prefWidth="481.0" promptText="Password" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+               <styleClass>
+                  <String fx:value="tf_box" />
+                  <String fx:value="search-box" />
+               </styleClass>
+               <font>
+                  <Font name="Cambria Bold" size="12.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@password%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <Label fx:id="wrongemail1" prefHeight="17.0" prefWidth="423.0" textAlignment="CENTER" textFill="#e11212">
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin>
+      </Label>
+      <Label styleClass="forgetBtn2" stylesheets="@style.css" text="Forget Password?" textFill="#878787">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="360.0" />
+         </VBox.margin>
+      </Label>
+      <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="428.0" stylesheets="@style.css" text="Sign In" VBox.vgrow="ALWAYS">
+         <styleClass>
+            <String fx:value="shadow" />
+            <String fx:value="logbtn2" />
+         </styleClass>
+         <VBox.margin>
+            <Insets left="20.0" right="15.0" top="20.0" />
+         </VBox.margin>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

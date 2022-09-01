@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication7.SlideController">
+   <children>
+      <HBox alignment="CENTER" layoutX="-4.0" layoutY="3.0" prefHeight="630.0" prefWidth="835.0" style="-fx-background-color: #FDE6EC;" stylesheets="@style.css">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="542.0" fitWidth="818.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../p1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
